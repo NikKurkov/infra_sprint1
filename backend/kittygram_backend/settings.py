@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['158.160.72.135', '127.0.0.1', 'lokalhost', 'romainkashichkin.ddns.net']
+ALLOWED_HOSTS = ['158.160.72.135', '127.0.0.1', 'localhost', 'romainkashichkin.ddns.net']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework',
     'djoser',
-    'cats.apps.CatsConfig',
+    'cats',
 ]
 
 MIDDLEWARE = [
